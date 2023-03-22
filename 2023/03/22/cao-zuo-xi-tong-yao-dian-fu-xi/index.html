@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="my first post, Hclee的博客">
+    <meta name="keywords" content="操作系统要点复习, Hclee的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>my first post | Hclee的博客</title>
+    <title>操作系统要点复习 | Hclee的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -266,12 +266,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">my first post</h1>
+                    <h1 class="description center-align post-title">操作系统要点复习</h1>
                 </div>
             </div>
         </div>
@@ -385,33 +385,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/PS3/">
-                                <span class="chip bg-color">PS3</span>
-                            </a>
-                        
-                            <a href="/tags/Games/">
-                                <span class="chip bg-color">Games</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Diary/" class="post-category">
-                                Diary
-                            </a>
-                        
-                            <a href="/categories/Diary/Life/" class="post-category">
-                                Life
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -420,21 +399,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2023-01-01
+                    2023-03-22
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-01-03
+                    2023-03-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    410
                 </div>
                 
 
@@ -461,7 +440,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="/im.png" alt=" "></p>
+                <h3 id="16-内存保护如何实现"><a href="#16-内存保护如何实现" class="headerlink" title="16 内存保护如何实现"></a>16 内存保护如何实现</h3><p>1cpu中设置一堆上下寄存器，限制访问<br>2 用重定位寄存器，用计算的方式计算界限</p>
+<h4 id="17交换技术，覆盖技术，以及两个的区别"><a href="#17交换技术，覆盖技术，以及两个的区别" class="headerlink" title="17交换技术，覆盖技术，以及两个的区别"></a>17交换技术，覆盖技术，以及两个的区别</h4><p>1覆盖技术，按逻辑分段，需要的时候进去<br>2 交换技术。在不同的任务内执行交换<br>3 交换技术主要是在进程和作业之间，覆盖技术主要在同一个进程和作业中。</p>
+<h4 id="18连续与非连续的内存分配方式"><a href="#18连续与非连续的内存分配方式" class="headerlink" title="18连续与非连续的内存分配方式"></a>18连续与非连续的内存分配方式</h4><p>连续分配是，要多少给多少连续的空间，<br>非连续分配是，要多少给多少不同的区，这些区的数量是动态的。</p>
+<h4 id="19-内部碎片与外部碎片"><a href="#19-内部碎片与外部碎片" class="headerlink" title="19 内部碎片与外部碎片"></a>19 内部碎片与外部碎片</h4><p>内部碎片是给了作业但是作业没有用到。<br>外部碎片是，内存中自己的碎片，这些碎片不能再分分配给任何作业了。</p>
+<h4 id="20-局部性原理"><a href="#20-局部性原理" class="headerlink" title="20 局部性原理"></a>20 局部性原理</h4><p>时间局部性<br>空间局部性<br>空间中的循环比较多，所以必定有的数据会被重复的执行。</p>
+<h3 id="21-虚拟存储器"><a href="#21-虚拟存储器" class="headerlink" title="21 虚拟存储器"></a>21 虚拟存储器</h3><p>把一部分外存也编码进内存地址。用的时候再调入调出<br>多次<br>对称，无需常驻，可进行调入调出<br>虚拟</p>
+<h4 id="22-银行家算法"><a href="#22-银行家算法" class="headerlink" title="22 银行家算法"></a>22 银行家算法</h4><p>在进行系统进行不安全状态的时候，提前算算安全不安全</p>
+<h4 id="23中断处理的流程"><a href="#23中断处理的流程" class="headerlink" title="23中断处理的流程"></a>23中断处理的流程</h4><p>1关中断<br>2存断点<br>3中断服务程序寻址<br>保存现场和屏蔽字<br>开中断<br>执行中断服务<br>关中断<br>恢复中断现场和屏蔽字<br>开中断，中断返回</p>
 
                 
             </div>
@@ -488,7 +474,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hcleelove.github.io/2023/01/01/my-first-post/">https://hcleelove.github.io/2023/01/01/my-first-post/</a>
+                    <a href="https://hcleelove.github.io/2023/03/22/cao-zuo-xi-tong-yao-dian-fu-xi/">https://hcleelove.github.io/2023/03/22/cao-zuo-xi-tong-yao-dian-fu-xi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -525,15 +511,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/PS3/">
-                                    <span class="chip bg-color">PS3</span>
-                                </a>
-                            
-                                <a href="/tags/Games/">
-                                    <span class="chip bg-color">Games</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -705,13 +683,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2023/01/02/ce-shi-yi/">
+                <a href="/2023/03/22/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="测试一">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">测试一</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -722,7 +700,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-02
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-22
                         </span>
                         <span class="publish-author">
                             
@@ -739,16 +717,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/01/01/my-first-post/">
+                <a href="/2023/01/02/ce-shi-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="my first post">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="测试一">
                         
-                        <span class="card-title">my first post</span>
+                        <span class="card-title">测试一</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -759,36 +737,15 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-02
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Diary/" class="post-category">
-                                    Diary
-                                </a>
-                            
-                            <a href="/categories/Diary/Life/" class="post-category">
-                                    Life
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            hclee
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/PS3/">
-                        <span class="chip bg-color">PS3</span>
-                    </a>
-                    
-                    <a href="/tags/Games/">
-                        <span class="chip bg-color">Games</span>
-                    </a>
-                    
                 </div>
                 
             </div>
